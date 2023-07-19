@@ -1,0 +1,13 @@
+The following is the list of commands which i used to clean my data in pandas library. The list contains description of commands with there syntax for any new individual who wants to learn. The following are basic commands but the ones which are used the most.
+
+1- ---.drop_duplicates()
+2---.drop(columns = "column name")
+3---.str.replace('replaced','replacement')
+4---.str.strip('what to strip')->(you can use lstrip or rstrip for specific loc)
+5---.apply(lambda x: x[0:3]+ '-' + [3:6])->(for if column is in string)
+6---.apply(lambda x: str(x))-> (to convert into string,it creates a string value for each entry)
+7---.str.split('what you're splitting at e.g ,',number of times to look for what you're splitting at,expand = true)
+8---.fillna('what you want to fill it with')->fill Null values
+9---.dropna(subset='column name'),inplace=true)-> to drop null values. you can also drop null values through for loop using index column.    inplace=true updates the original file and saves it which can also be done by df=df.etc.
+
+NOTE: replace --- with your tablename and column name e.g df["phone_number"] or only with column name e.g df.fillna().
